@@ -4,19 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styleutil.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Slab&family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <nav>
-      <ul>
-        <li>Anish.</li>
-        <li>Home</li>
-        <li>About</li>
-        <li>Login/Resgister</li>
-        <li>Services</li>
-        li
-      </ul>
-    </nav>
+    <div class="navigation-bar">
+      <div class="name font-size-40px"><span class="red">A</span>nish.</div>
+      <nav class="navbar">
+        <ul>
+          <li id="home" class="font-size-20px">Home</li>
+          <li id="about" class="font-size-20px">About</li>
+          <li id="services" class="font-size-20px">Services</li>
+          <li id="contact" class="font-size-20px">Contact</li>
+          <li id="feedback" class="font-size-20px">Feedback</li>
+        </ul>
+      </nav>
+    </div>
+    
+    <div class="body">
+      <div class="intro">
+        <ul>
+          <li class="intro-text mstop msbot font-size-20px">Web Developer</li>
+          <li class="intro-text b font-size-40px">Hi, I am <span class="red b">Anish</span></li>
+          <li class="intro-text mstop msbot b font-size-40px">Das from India</li>
+        </ul>
+      </div>
+    </div>
   </header>
+  <script src="script.js"></script>
 </body>
 </html>
