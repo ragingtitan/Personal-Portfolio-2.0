@@ -66,8 +66,9 @@ body h3:hover{
     margin-top: 250px;
 }
 
-/*animation properties*/
 
+
+/*animation properties*/
 #home:hover{
     /*border: 3px red solid;
     border-radius: 4px;*/
@@ -76,10 +77,12 @@ body h3:hover{
 }
 
 
+
 #about:hover{
     color: red;
     font-weight: bold;
 }
+
 
 
 #services:hover{
@@ -88,17 +91,18 @@ body h3:hover{
 }
 
 
+
 #contact:hover{
     color: red;
     font-weight: bold;
 }
 
 
+
 #feedback:hover{
     color: red;
     font-weight: bold;
 }
-
 
 
 
@@ -109,9 +113,12 @@ body h3:hover{
     color: white;
 }
 
+
+
 .profile-pic{
     height: 400px;
 }
+
 
 
 .skillset{
@@ -119,21 +126,26 @@ body h3:hover{
 }
 
 
+
 #skill:hover{
-    text-decoration: underline red 3px;
+    text-decoration: underline red 3.5px;
 }
+
+
 
 #experience:hover{
-    text-decoration: underline red 3px;
+    text-decoration: underline red 3.5px;
 }
+
+
 
 #education:hover{
-    text-decoration: underline red 3px;
+    text-decoration: underline red 3.5px;
 }
 
 
-/*Services page*/
 
+/*Services section*/
 .services{
     display: flex;
     flex-direction: column;
@@ -155,6 +167,12 @@ body h3:hover{
     width: 25rem;
     background-color: #323232;
     border-radius: 15px;
+}
+
+
+
+.service1, .service2, .service3:hover{
+    cursor: pointer;
 }
 
 
@@ -195,17 +213,132 @@ body h3:hover{
 
 
 .service1:hover{
-    background: red;
+    background: #ab2020;
+    transition: background-color 0.3s ease-in-out;
 }
 
 
 
 .service2:hover{
-    background: red;
+    background: #ab2020;
+    transition: background-color 0.3s ease-in-out;
 }
 
 
 
 .service3:hover{
-    background: red;
+    background: #ab2020;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+
+.img-logo-aiml{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/*aniamtion forms*/
+@keyframes appearAnimation {
+    from {
+      opacity: 0;
+      background-color: blue;
+    }
+    to {
+      opacity: 1;
+      background-color: #ab2020;
+    }
+  }
+
+  /* Keyframes for fading animation */
+@keyframes fadeAnimation {
+    from {
+      opacity: 1;
+      background-color: #ab2020;
+    }
+    to {
+      opacity: 0;
+      background-color: blue;
+    }
+  }
+
+
+  .project{
+    display: flex;
+    flex-direction: column;
+    background-color: #121010;
+  }
+
+
+
+  .project-wrapper{
+    display: flex;
+    justify-content: center;
+  }
+
+
+
+  .project1,.project2,.project3{
+    height: 25rem;
+    width: 25rem;
+    background-color: #323232;
+    border-radius: 15px;
+  }
+
+
+  .project1-head a img{
+    height: 25rem;
+    width: 25rem;
+    border-radius: 15px;
+  }
+
+
+
+  .project2-head a img{
+    height: 25rem;
+    width: 25rem;
+    border-radius: 15px;
+  }
+
+
+
+  .project3-head a img{
+    height: 25rem;
+    width: 25rem;
+    border-radius: 15px;
+  }
+
+
+
+  .seemorebtn{
+    display: flex;
+    justify-content: center;
+  }
+
+  .seemorebtn .btn{
+    height: 3rem;
+    width: 8rem;
+    color: white;
+    background: #121010;
+    border: #ab2020 2px solid;
+    border-radius: 5px;
+  }
+
+
+.seemorebtn .btn:hover{
+    background: #121010;
+    animation: highlightbtn forwards 0.2s;
+}
+
+@keyframes highlightbtn {
+    from{
+        color: white;
+        background: #121010;
+    }
+    to{
+        color: white;
+        background: #ab2020;
+    }
 }
