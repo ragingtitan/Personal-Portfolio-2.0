@@ -4,43 +4,23 @@ document.addEventListener('DOMContentLoaded',()=>{
     const services=document.getElementById('services');
     const contact=document.getElementById('contact');
     const feedback=document.getElementById('feedback');
-    /*Border animation*/
-    home.addEventListener('mouseenter',()=>{
-        home.classList.toggle('border');
-    });
-    home.addEventListener('mouseleave',()=>{
-        home.classList.toggle('border');
-    });
-    
+    const skill=document.getElementById('skill');
+    const experience=document.getElementById('experience');
+    const education=document.getElementById('education');
+    const text=document.getElementById('text');
 
-    about.addEventListener('mouseenter',()=>{
-        about.classList.toggle('border');
-    });
-    about.addEventListener('mouseleave',()=>{
-        about.classList.toggle('border');
+    skill.addEventListener('click',()=>{
+        text.innerHTML='<p>This is a skill This is a skill This is a skill This is a skill This is a skill</p>';
     });
 
 
-    services.addEventListener('mouseenter',()=>{
-        services.classList.toggle('border');
+    experience.addEventListener('click',()=>{
+        text.innerHTML='<p>This is a experienceexperience This is a experience This is a experience This is a experience This is a experience</p>';
     });
-    services.addEventListener('mouseleave',()=>{
-        services.classList.toggle('border');
+
+    education.addEventListener('click',()=>{
+        text.innerHTML='<p>This is a education This is a education This is a education This is a education This is a skill</p>';
     });
 
 
-    contact.addEventListener('mouseenter',()=>{
-        contact.classList.toggle('border');
-    });
-    contact.addEventListener('mouseleave',()=>{
-        contact.classList.toggle('border');
-    });
-
-
-    feedback.addEventListener('mouseenter',()=>{
-        feedback.classList.toggle('border');
-    });
-    feedback.addEventListener('mouseleave',()=>{
-        feedback.classList.toggle('border');
-    });
 });

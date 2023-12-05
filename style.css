@@ -10,8 +10,17 @@ body{
     background-color: rgb(20, 20, 20);
     font-family: 'Roboto', sans-serif;
     font-family: 'Roboto Slab', serif;
+    color: white;
 }
 
+body h3:hover{
+    cursor: pointer;
+}
+
+
+.navbar a{
+    color: white;
+}
 
 .navbar ul{
     display: flex;
@@ -49,8 +58,8 @@ body{
 }
 
 
+
 .intro{
-    width: 100%;
     padding: 0px 100px;
     font-size: 25px;
     color: white;
@@ -59,8 +68,90 @@ body{
 
 /*animation properties*/
 
-.border{
+#home:hover{
     /*border: 3px red solid;
     border-radius: 4px;*/
+    color: red;
+}
+
+
+#about:hover{
+    color: red;
+}
+
+
+#services:hover{
+    color: red;
+}
+
+
+#contact:hover{
+    color: red;
+}
+
+
+#feedback:hover{
+    color: red;
+}
+
+
+
+
+.info{
+    display: flex;
+    height: 400px;
+    background-color: #121010;
+    color: white;
+}
+
+.profile-pic{
+    height: 400px;
+}
+
+
+.skillset{
+    display: flex;
+}
+
+
+#skill:hover{
     text-decoration: underline red 3px;
 }
+
+#experience:hover{
+    text-decoration: underline red 3px;
+}
+
+#education:hover{
+    text-decoration: underline red 3px;
+}
+
+
+/*Services page*/
+
+.services{
+    display: flex;
+    flex-direction: column;
+    background-color: #121010;
+}
+
+
+.services-wrapper{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.service1, .service2, .service3{
+    height: 28rem;
+    width: 28rem;
+    background-color: #323232;
+    border-radius: 15px;
+}
+
+
+.app-grid-icon__image-origin {
+    filter: brightness(100%) saturate(0%) grayscale(100%);
+  }
+  
+  
