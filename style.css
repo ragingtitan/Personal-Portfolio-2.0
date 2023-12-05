@@ -72,26 +72,31 @@ body h3:hover{
     /*border: 3px red solid;
     border-radius: 4px;*/
     color: red;
+    font-weight: bold;
 }
 
 
 #about:hover{
     color: red;
+    font-weight: bold;
 }
 
 
 #services:hover{
     color: red;
+    font-weight: bold;
 }
 
 
 #contact:hover{
     color: red;
+    font-weight: bold;
 }
 
 
 #feedback:hover{
     color: red;
+    font-weight: bold;
 }
 
 
@@ -136,22 +141,71 @@ body h3:hover{
 }
 
 
+
 .services-wrapper{
     display: flex;
     justify-content: center;
     
 }
 
+
+
 .service1, .service2, .service3{
-    height: 28rem;
-    width: 28rem;
+    height: 25rem;
+    width: 25rem;
     background-color: #323232;
     border-radius: 15px;
 }
 
 
-.app-grid-icon__image-origin {
-    filter: brightness(100%) saturate(0%) grayscale(100%);
-  }
+
+.img-logo-sourcecode img{
+    height: 150px;
+    width: 150px;
+}
+
+
+
+.img-logo-sourcecode{
+    display: flex;
+    justify-content: center;
+}
   
-  
+
+
+.service1-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.img-logo-uiux img{
+    height: 100px;
+    width: 100px;
+}
+
+
+
+.img-logo-uiux{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.service1:hover{
+    background: red;
+}
+
+
+
+.service2:hover{
+    background: red;
+}
+
+
+
+.service3:hover{
+    background: red;
+}
