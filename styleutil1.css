@@ -60,6 +60,7 @@
 }
 a{
     text-decoration: none;
+    
 }
 a:hover{
     cursor: pointer;
@@ -120,4 +121,15 @@ ul{
 }
 .mxlr{
     margin-right: 100px;
+}
+.mxxlr{
+    margin-right: 200px;
+}
+textarea{
+    padding: 10px;
+    resize: none;
+}
+
+button:hover{
+    cursor: pointer;
 }
