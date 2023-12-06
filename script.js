@@ -64,4 +64,6 @@ document.addEventListener('DOMContentLoaded',()=>{
     }
 typingText();
 
+
+
 });
