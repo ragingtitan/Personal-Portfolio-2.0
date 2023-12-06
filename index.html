@@ -217,10 +217,13 @@
               <button class="btn">Submit</button>
             </div>
           </form>
-          <span id="msg"></span>
+          <span id="msg msbot"></span>
         </div>
       </div>
     </div>
+  <footer>
+    <p class="footer center">&copy; Anish Das inc.</p> 
+  </footer>
   <script src="script.js"></script>
   <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbw6gO4uGTIjIZ2isuhJSkbz4QOVMFlCgn-6ZKQWB3Xu4x8eGT0s6F-SI5AJOfs9ugiUDA/exec'
@@ -234,7 +237,7 @@
           msg.innerHTML="Form submitted successfully!"
           setTimeout(function(){
             msg.innerHTML=""
-          },5000)
+          },1000)
           form.reset()
         })
         .catch(error => console.error('Error!', error.message))

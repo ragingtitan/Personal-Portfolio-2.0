@@ -666,3 +666,11 @@ a{
         color: #61b752;
         display: block;
     }
+
+
+    .footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+    }
