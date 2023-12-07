@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded',()=>{
 
 
     /*Typing animations*/
-    const words = ["Hey, there!","I am Anish Das", "Welcome to my portfolio.", "I hope you like it."," Follow me on social media.", "Kindly share your feedback.", "Thank you.","Have a nice day!"];
+    const words = ["Hey, there!","Welcome!","I am Anish Das.","Follow me on","Facebook","Instagram","LinkedIn","Github","Fill the form", "Thank you.","Goodday!"];
     let index = 0;
     let wordIndex = 0;
     let intervalId;
