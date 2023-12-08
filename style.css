@@ -22,6 +22,12 @@ body h3:hover{
 }
 
 
+
+
+h2{
+    font-size: 50px;
+}
+
 .navbar a{
     color: white;
 }
@@ -59,6 +65,7 @@ body h3:hover{
     margin-left: 100px;
     color: white;
     font-weight: bold;
+    font-size: 40px;
 }
 
 
@@ -116,7 +123,6 @@ body h3:hover{
 
 .info{
     display: flex;
-    height: auto;
     background-color: #121010;
     color: white;
 }
@@ -140,6 +146,7 @@ body h3:hover{
 .skillset{
     display: flex;
     box-sizing: border-box;
+
 }
 
 
@@ -168,7 +175,8 @@ body h3:hover{
 
 
 #text{
-    height: 100px;
+    font-size: 20px;
+    height: 80px;
     width: auto;
 }
 
@@ -233,18 +241,18 @@ body h3:hover{
 
 .project2-body{
     position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.7);
-      color: white;
-      text-align: center;
-      padding: 20px;
-      box-sizing: border-box;
-      opacity: 0;
-      transition: opacity 0.3s ease-in-out;
-      filter: blur(5px);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    filter: blur(5px);
 }
 
 
@@ -269,18 +277,18 @@ body h3:hover{
 
 .project3-body{
     position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.7);
-      color: white;
-      text-align: center;
-      padding: 20px;
-      box-sizing: border-box;
-      opacity: 0;
-      transition: opacity 0.3s ease-in-out;
-      filter: blur(5px);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    filter: blur(5px);
 }
 
 
@@ -501,6 +509,7 @@ body h3:hover{
 
 
 
+
 .contact{
     background-color: #121010;
 }
@@ -514,6 +523,10 @@ body h3:hover{
     margin-right: 240px;
 }
 
+
+
+
+
 .form{
     height: 50px;
     width: 30rem;
@@ -524,6 +537,10 @@ body h3:hover{
     font-weight: bold;
     border-radius: 5px;
 }
+
+
+
+
 textarea{
     height: 200px;
     width: 30rem;
@@ -534,6 +551,10 @@ textarea{
     font-weight: bold;
     border-radius: 5px;
 }
+
+
+
+
 
 .download .btn{
     height: 3rem;
@@ -546,9 +567,14 @@ textarea{
     font-size: 13px;
 }
 
+
+
+
+
 a{
     color: white;
 }
+
 
 
 
@@ -556,6 +582,9 @@ a{
     display: flex;
     height: 50px;
 }
+
+
+
 
 .socialmedia .facebook,.instagram,.linkedin,.github{
     margin-right: 7px;
@@ -627,6 +656,32 @@ a{
     font-size: 13px;
     animation: transitionbackground 0.3s forwards;
     
+}
+
+
+
+.submitformbtn{
+    display: flex;
+    justify-content: center;
+}
+
+
+.submitformbtn .btn{
+    height: 3rem;
+    width: 8rem;
+    color: white;
+    background: #121010;
+    border: #ab2020 2px solid;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 13px;
+  }
+
+
+
+.submitformbtn .btn:hover{
+    background: #121010;
+    animation: highlightbtn forwards 0.2s;
 }
 
 
@@ -715,7 +770,9 @@ a{
 /* Media query for devices with a maximum width of 600 pixels */
 @media screen and (max-width: 600px) {
     /* Styles for devices with a maximum width of 600 pixels */
-    
+    .name{
+        font-size: 30px;
+    }
 
     .services-wrapper{
         flex-wrap: wrap;
@@ -733,11 +790,16 @@ a{
     }
 
     #text{
-        height: 100px;
+        height: 60px;
+    }
+
+    #text p{
+        font-size: 15px;
     }
 
     h2{
         text-align: center;
+        font-size: 30px;
     }
     .skillset{
         display: flex;
@@ -760,10 +822,99 @@ a{
     .animation{
         height: 25px;
     }
+    .contact-wrapper{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .form{
+        height: 50px;
+        width: 20rem;
+    }
+    textarea{
+        width: 20rem;
+    }
+    .contact-form{
+        padding: 0px 25px;
+    }
+    .submitformbtn{
+        display: flex;
+        justify-content: left;
+    }
+    
+    .seemorebtn{
+        display: flex;
+        justify-content: center;
+      }
+    
+    
+    
+    .seemorebtn .btn{
+        height: 2.5rem;
+        width: 6rem;
+        color: white;
+        background: #121010;
+        border: #ab2020 2px solid;
+        border-radius: 5px;
+        font-weight: 600;
+        font-size: 13px;
+      }
+      .submitformbtn{
+        display: flex;
+        justify-content: left;
+    }
+    
+    
+    .submitformbtn .btn{
+        height: 2.5rem;
+        width: 6rem;
+        color: white;
+        background: #121010;
+        border: #ab2020 2px solid;
+        border-radius: 5px;
+        font-weight: 600;
+        font-size: 13px;
+    }
+    .download .btn{
+        height: 2.5rem;
+        width: 8rem;
+        color: white;
+        background: #ab2020;
+        border: #ab2020 2px solid;
+        border-radius: 5px;
+        font-weight: 600;
+        font-size: 13px;
+    }
+    
+    .download .btn:hover{
+        height: 2.5rem;
+        width: 8rem;
+        
+        border-radius: 5px;
+        font-weight: 600;
+        font-size: 13px;
+        animation: transitionbackground 0.3s forwards;
+        
+    }
+    
+    @keyframes transitionbackground {
+        0%{
+            background: #ab2020;
+            border: #ab2020 2px solid;
+        }
+        100%{
+            background: blue;
+            border: blue 2px solid;
+        }
+    }
+    
 }
   /* Media query for devices with a minimum width of 601 pixels and a maximum width of 900 pixels */
   @media screen and (min-width: 601px) and (max-width: 900px) {
     /* Styles for devices with a width between 601 and 900 pixels */
+    .name{
+        font-size: 30px;
+    }
     .navbar ul{
         display: flex;
         flex-wrap: wrap;
@@ -792,10 +943,16 @@ a{
         display: flex;
         width: 100%;
         justify-content: center;
-        height: 100px;
+        height: 60px;
     }
+
+    #text p{
+        font-size: 15px;
+    }
+
     h2{
         text-align: center;
+        font-size: 30px;
     }
 
     .service1-header,.service2-header,.service3-header{
@@ -820,6 +977,23 @@ a{
     .animation{
         height: 25px;
     }
+    .contact-wrapper{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .contact-form{
+        padding: 0px 50px;
+    }
+    .submitformbtn{
+        display: flex;
+        justify-content: left;
+    }
+
+    .contact-header h2{
+        text-align: center;
+    }
+    
   }
   
   /* Media query for devices with a minimum width of 901 pixels */
