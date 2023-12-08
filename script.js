@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     const experience=document.getElementById('experience');
     const education=document.getElementById('education');
     const text=document.getElementById('text');
-
+    /*Populating skillset section*/ 
     skill.addEventListener('click',()=>{
         text.classList.toggle('toggle');
         text.innerHTML='<p>This is a skill This is a skill This is a skill This is a skill This is a skill</p>';
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded',()=>{
 
 
     /*Typing animations*/
-    const words = ["Hey, there!","Welcome!","I am Anish Das.","Follow me on","Facebook","Instagram","LinkedIn","Github","contact me below.", "Thank you.","Have a nice day!"];
+    const words = ["Hey, there!","Welcome!","I am Anish Das.","Follow me on","Facebook","Instagram","LinkedIn","and Github.","Contact me below.", "Thank you.","Have a nice day!"];
     let index = 0;
     let wordIndex = 0;
     let intervalId;
