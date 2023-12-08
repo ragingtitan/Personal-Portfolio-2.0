@@ -71,6 +71,10 @@ body h3:hover{
 }
 
 
+.intro .intro-text{
+    font-size: 40px;
+}
+
 
 /*animation properties*/
 #home a:hover{
@@ -112,21 +116,30 @@ body h3:hover{
 
 .info{
     display: flex;
-    height: 400px;
+    height: auto;
     background-color: #121010;
     color: white;
 }
 
 
 
+
+.info-wrapper{
+    display: flex;
+    height: auto;
+}
+
+
 .profile-pic{
     height: 400px;
+    box-sizing: border-box;
 }
 
 
 
 .skillset{
     display: flex;
+    box-sizing: border-box;
 }
 
 
@@ -155,7 +168,8 @@ body h3:hover{
 
 
 #text{
-    width: 325px;
+    height: 100px;
+    width: auto;
 }
 
 
@@ -272,6 +286,9 @@ body h3:hover{
 
 
 /*Services section*/
+
+
+
 .services{
     display: flex;
     flex-direction: column;
@@ -282,9 +299,8 @@ body h3:hover{
 
 .services-wrapper{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
-
 
 
 
@@ -294,6 +310,7 @@ body h3:hover{
     width: 25rem;
     background-color: #323232;
     border-radius: 15px;
+    margin: 10px;
 }
 
 
@@ -397,6 +414,7 @@ body h3:hover{
 
   .project{
     display: flex;
+    
     flex-direction: column;
     background-color: #121010;
   }
@@ -405,7 +423,7 @@ body h3:hover{
 
   .project-wrapper{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
   }
 
 
@@ -415,6 +433,7 @@ body h3:hover{
     width: 25rem;
     background-color: #323232;
     border-radius: 15px;
+    margin: 10px;
   }
 
 
@@ -540,6 +559,8 @@ a{
 
 .socialmedia .facebook,.instagram,.linkedin,.github{
     margin-right: 7px;
+    height: 30px;
+    width: 30px;
 }
 
 
@@ -677,8 +698,17 @@ a{
         height: 50px;
     }
 
+    #menu-icon{
+        padding: 0;
+        margin: 0;
+        display: none;
+        box-sizing: border-box;
+    }
 
-
+    #menu-icon svg:hover{
+        border: #ab2020 5px solid;
+        border-radius: 5px;
+    }
 
     /* Default styles for all devices */
 
@@ -694,9 +724,43 @@ a{
     .project-wrapper{
         flex-wrap: wrap;
     }
+    .profile-pic{
+        display: none;
+    }
 
+    .info-wrapper{
+        margin: 10px;
+    }
+
+    #text{
+        height: 100px;
+    }
+
+    h2{
+        text-align: center;
+    }
+    .skillset{
+        display: flex;
+        justify-content: center;
   }
-  
+
+  .navbar ul .hide{
+    display: none;
+    }
+    #menu-icon{
+        display: block;
+    }
+    .intro .intro-text{
+        font-size: 20px;
+    }
+    .cursor{
+        height: 25px;
+        width: 3px;
+    }
+    .animation{
+        height: 25px;
+    }
+}
   /* Media query for devices with a minimum width of 601 pixels and a maximum width of 900 pixels */
   @media screen and (min-width: 601px) and (max-width: 900px) {
     /* Styles for devices with a width between 601 and 900 pixels */
@@ -708,11 +772,54 @@ a{
     .services-wrapper{
         flex-wrap: wrap;
     }
-
     .project-wrapper{
         flex-wrap: wrap;
     }
 
+    .profile-pic{
+        display: none;
+    }
+
+    .info-wrapper{
+        margin: 10px;
+    }
+    
+    .skillset{
+        display: flex;
+        justify-content: center;
+    }
+    #text{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        height: 100px;
+    }
+    h2{
+        text-align: center;
+    }
+
+    .service1-header,.service2-header,.service3-header{
+        display: flex;
+        justify-content: center;
+    }
+    .navbar ul .hide{
+        display: none;
+    }
+    #menu-icon{
+        display: block;
+    }
+    .intro .intro-text{
+        font-size: 20px;
+        
+    }
+    .cursor{
+        height: 25px;
+        width: 3px;
+    }
+    
+    .animation{
+        height: 25px;
+    }
   }
   
   /* Media query for devices with a minimum width of 901 pixels */
@@ -732,19 +839,18 @@ a{
         flex-wrap: wrap;
     }
 
+    .info{
+        font-size: 20px;
+    }
+
   }
   
 
 
   @media screen and (min-width: 100px) and (max-width: 900px) {
     /* Styles for devices with a width between 601 and 900 pixels */
-    .navbar ul{
-        display: flex;
-        flex-wrap: wrap;
-    }
 
     .services-wrapper{
-        margin: 0;
         flex-wrap: wrap;
         justify-content: center;
     }
@@ -761,10 +867,8 @@ a{
     .project2{
         margin-top: 10px;
     }
-    .navbar{
-        display: none;
-    }
     .name{
         
     }
+    
   }
