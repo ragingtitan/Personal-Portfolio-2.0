@@ -70,6 +70,12 @@ h2{
 
 
 
+
+.name:hover{
+    cursor: pointer;
+}
+
+
 .intro{
     padding: 0px 100px;
     font-size: 25px;
