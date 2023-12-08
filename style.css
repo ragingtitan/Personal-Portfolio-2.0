@@ -772,6 +772,7 @@ a{
     /* Styles for devices with a maximum width of 600 pixels */
     .name{
         font-size: 30px;
+        margin-left: 50px;
     }
 
     .services-wrapper{
@@ -914,6 +915,7 @@ a{
     /* Styles for devices with a width between 601 and 900 pixels */
     .name{
         font-size: 30px;
+        margin-left: 50px;
     }
     .navbar ul{
         display: flex;
