@@ -125,7 +125,9 @@ h2{
     font-weight: bold;
 }
 
-
+.job{
+    font-size: 20px;
+}
 
 .info{
     display: flex;
@@ -784,7 +786,7 @@ a{
     .intro{
         padding-left: 50px;
     }
-
+    
     .services-wrapper{
         flex-wrap: wrap;
     }
@@ -949,7 +951,7 @@ a{
         margin: 10px;
     }
     .services span{
-        font-size: 20px;
+        font-size: 25px;
         font-weight: bold;
     }
     .services p{
@@ -1073,7 +1075,7 @@ a{
         margin: 10px;
       }
     .services span{
-        font-size: 20px;
+        font-size: 25px;
         font-weight: bold;
     }
     .services p{
