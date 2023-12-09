@@ -103,7 +103,7 @@ function removeText() {
 }
 
 // Add a delay before typing the first sentence
-setTimeout(typingText, 2500);
+setTimeout(typingText, 3000);
 
 
 
