@@ -781,6 +781,10 @@ a{
         margin-left: 50px;
     }
 
+    .intro{
+        padding-left: 50px;
+    }
+
     .services-wrapper{
         flex-wrap: wrap;
     }
@@ -822,6 +826,11 @@ a{
     .intro .intro-text{
         font-size: 20px;
     }
+    .service1-header,.service2-header,.service3-header{
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+    }
     .cursor{
         height: 25px;
         width: 3px;
@@ -834,6 +843,7 @@ a{
         flex-direction: column;
         margin: 0;
     }
+    
     .form{
         height: 50px;
         width: 20rem;
@@ -914,6 +924,37 @@ a{
             border: blue 2px solid;
         }
     }
+
+    .service1, .service2, .service3{
+        height: 22rem;
+        width: 22rem;
+        background-color: #323232;
+        border-radius: 15px;
+        margin: 10px;
+    }
+    .img-logo-sourcecode{
+        display: none;
+    }
+    .img-logo-uiux {
+        display: none;
+    }
+    .img-logo-aiml{
+        display: none;
+    }
+    .project1,.project2,.project3{
+        height: 22rem;
+        width: 22rem;
+        background-color: #323232;
+        border-radius: 15px;
+        margin: 10px;
+    }
+    .services span{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .services p{
+        font-size: 15px;
+    }
     
 }
   /* Media query for devices with a minimum width of 601 pixels and a maximum width of 900 pixels */
@@ -923,6 +964,10 @@ a{
         font-size: 30px;
         margin-left: 50px;
     }
+    .intro{
+        padding-left: 50px;
+    }
+
     .navbar ul{
         display: flex;
         flex-wrap: wrap;
@@ -1001,8 +1046,40 @@ a{
     .contact-header h2{
         text-align: center;
     }
-    
-  }
+    .service1, .service2, .service3{
+        height: 22rem;
+        width: 22rem;
+        background-color: #323232;
+        border-radius: 15px;
+        margin: 10px;
+    }
+    .img-logo-sourcecode img{
+        height: 100px;
+        width: 100px;
+    }
+    .img-logo-uiux img{
+        height: 50px;
+        width: 50px;
+    }
+    .img-logo-aiml svg{
+        height: 50px;
+        width: 50px;
+    }
+    .project1,.project2,.project3{
+        height: 22rem;
+        width: 22rem;
+        background-color: #323232;
+        border-radius: 15px;
+        margin: 10px;
+      }
+    .services span{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .services p{
+        font-size: 15px;
+    }
+}
   
   /* Media query for devices with a minimum width of 901 pixels */
   @media screen and (min-width: 901px) {
