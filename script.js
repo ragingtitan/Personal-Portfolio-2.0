@@ -11,16 +11,16 @@ document.addEventListener('DOMContentLoaded',()=>{
     /*Populating skillset section*/ 
     skill.addEventListener('click',()=>{
         text.classList.toggle('toggle');
-        text.innerHTML='<p>This is a skill This is a skill This is a skill This is a skill This is a skill</p>';
+        text.innerHTML='<p>HTML, CSS, JavaScript,   Responsive Design, node.js, UI/UX Principles and figma</p>';
     });
     experience.addEventListener('click',()=>{
         text.classList.toggle('toggle');
-        text.innerHTML='<p>This is a experienceexperience This is a experience This is a experience This is a experience This is a experience</p>';
+        text.innerHTML='<p>I am currently doing an internship at OASIS Infobyte.</p>';
     });
 
     education.addEventListener('click',()=>{
         text.classList.toggle('toggle');
-        text.innerHTML='<p>This is a education This is a education This is a education This is a education This is a skill</p>';
+        text.innerHTML='<p>Completed my class 10 from St. Marys orphanage and day school, and class 12 from Indira Gandhi Memorial High School. Doing BTECH at Heritage Institute of Technology, Kolkata.</p>';
     });
 
 
