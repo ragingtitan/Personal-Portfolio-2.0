@@ -12,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Slab&family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div id="preloader"></div>
   <header>
     <div class="navigation-bar">
       <div class="name"><a href="https://portfolioanishdas.netlify.app/"><span class="red">A</span>nish.</a></div>
@@ -248,6 +249,14 @@
           form.reset()
         })
         .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  <script>
+    let loader=document.getElementById('preloader');
+    window.addEventListener('load',()=>{
+      setInterval(()=>{
+        loader.style.display='none';
+      },2000)
     })
   </script>
 </body>

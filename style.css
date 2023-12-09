@@ -22,7 +22,14 @@ body h3:hover{
 }
 
 
-
+#preloader{
+    background: white url('fa87774590186b287a5338d7c87afc0c.gif') no-repeat center center;
+    background-size: 15%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
 
 h2{
     font-size: 50px;

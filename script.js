@@ -23,8 +23,8 @@ document.addEventListener('DOMContentLoaded',()=>{
         text.innerHTML='<p>Completed my class 10 from St. Marys orphanage and day school, and class 12 from Indira Gandhi Memorial High School. Doing BTECH at Heritage Institute of Technology, Kolkata.</p>';
     });
 
-
-    /*Typing animations*/
+/*
+    //Typing animations
     const words = ["Hey, there!","Welcome!","I am Anish Das.","Follow me on","Facebook","Instagram","LinkedIn","and Github.","Contact me below.", "Thank you.","Have a nice day!"];
     let index = 0;
     let wordIndex = 0;
@@ -62,6 +62,49 @@ document.addEventListener('DOMContentLoaded',()=>{
             setTimeout(typingText, 1000);
         }
     }
-typingText();
+typingText();*/
+
+const words = ["Hey, there!","Welcome!","I am Anish Das.","Follow me on","Facebook","Instagram","LinkedIn","and Github.","Contact me below.", "Thank you.","Have a nice day!"];
+let index = 0;
+let wordIndex = 0;
+let intervalId;
+
+function typingText() {
+    const target = document.getElementById("type");
+    const currentWord = words[wordIndex];
+    const currentWordLength = currentWord.length;
+
+    if (index < currentWordLength) {
+        target.textContent += currentWord.charAt(index);
+        index++;
+        setTimeout(typingText, 50);
+    } else {
+        setTimeout(() => {
+            intervalId = setInterval(removeText, 20);
+        }, 1500);
+    }
+}
+
+// To remove text after typing
+function removeText() {
+    const target = document.getElementById("type");
+    const currentWord = words[wordIndex];
+    const currentWordLength = currentWord.length;
+
+    if (index > 0) {
+        target.textContent = currentWord.substring(0, index - 1);
+        index--;
+    } else {
+        clearInterval(intervalId);
+        wordIndex = (wordIndex + 1) % words.length;
+        index = 0;
+        setTimeout(typingText, 1000);
+    }
+}
+
+// Add a delay before typing the first sentence
+setTimeout(typingText, 2500);
+
+
 
 });
