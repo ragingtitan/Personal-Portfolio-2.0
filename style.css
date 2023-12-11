@@ -610,10 +610,16 @@ a{
 
 
 
+.facebook,.instagram,.linkedin,.github{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 .socialmedia .facebook img:hover{
-    height: 10px;
-    width: 10px;
-    animation: enlarge 0.2s forwards;
+    animation: enlarge 0.3s forwards;
     cursor: pointer;
 }
 
@@ -621,18 +627,14 @@ a{
 
 
 .socialmedia .instagram img:hover{
-    height: 10px;
-    width: 10px;
-    animation: enlarge 0.2s forwards;
+    animation: enlarge 0.3s forwards;
     cursor: pointer;
 }
 
 
 
 .socialmedia .linkedin img:hover{
-    height: 10px;
-    width: 10px;
-    animation: enlarge 0.2s forwards;
+    animation: enlarge 0.3s forwards;
     cursor: pointer;
 }
 
@@ -640,9 +642,7 @@ a{
 
 
 .socialmedia .github img:hover{
-    height: 10px;
-    width: 10px;
-    animation: enlarge 0.1s forwards;
+    animation: enlarge 0.3s forwards;
     cursor: pointer;
 }
 
@@ -655,8 +655,8 @@ a{
         width: 25px;
     }
     to{
-        height: 28px;
-        width: 28px;
+        height: 30px;
+        width: 30px;
     }
 }
 
@@ -794,7 +794,9 @@ a{
         padding-left: 50px;
         margin-top: 100px;
     }
-    
+    .about-me-text{
+        text-align: center;
+    }
     .services-wrapper{
         flex-wrap: wrap;
     }
