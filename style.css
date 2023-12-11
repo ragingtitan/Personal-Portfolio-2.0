@@ -95,6 +95,25 @@ h2{
     font-size: 40px;
 }
 
+#go-up{
+    top: 90%;
+    left:95%;
+    z-index: 500;
+    position: fixed;
+}
+#go-up:hover{
+    cursor: pointer;
+}
+
+#go-up .go-up-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(177, 67, 67);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
 
 /*animation properties*/
 #home a:hover{
@@ -774,11 +793,7 @@ a{
         display: none;
         box-sizing: border-box;
     }
-
-    #menu-icon svg:hover{
-        border: #ab2020 5px solid;
-        border-radius: 5px;
-    }
+    
 
     /* Default styles for all devices */
 
