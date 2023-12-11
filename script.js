@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     /*Populating skillset section*/ 
     skill.addEventListener('click',()=>{
         text.classList.toggle('toggle');
-        text.innerHTML='<p>HTML, CSS, JavaScript,   Responsive Design, node.js, UI/UX Principles and figma</p>';
+        text.innerHTML='<p>HTML, CSS, JavaScript, Responsive Design, node.js, UI/UX Principles and figma</p>';
     });
     experience.addEventListener('click',()=>{
         text.classList.toggle('toggle');
@@ -104,7 +104,4 @@ function removeText() {
 
 // Add a delay before typing the first sentence
 setTimeout(typingText, 3000);
-
-
-
 });

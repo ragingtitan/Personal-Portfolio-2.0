@@ -1116,7 +1116,7 @@ a{
 
 
   @media screen and (min-width: 100px) and (max-width: 900px) {
-    /* Styles for devices with a width between 601 and 900 pixels */
+    /* Styles for devices with a width between 100 and 900 pixels */
 
     .services-wrapper{
         flex-wrap: wrap;
