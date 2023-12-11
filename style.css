@@ -792,6 +792,7 @@ a{
 
     .intro{
         padding-left: 50px;
+        margin-top: 100px;
     }
     
     .services-wrapper{
@@ -824,7 +825,7 @@ a{
     .skillset{
         display: flex;
         justify-content: center;
-  }
+    }
 
   .navbar ul .hide{
     display: none;
@@ -975,6 +976,7 @@ a{
     }
     .intro{
         padding-left: 50px;
+        margin-top: 100px;
     }
 
     .navbar ul{
