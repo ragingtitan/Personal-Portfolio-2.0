@@ -17,27 +17,34 @@ body{
     color: white;
 }
 
+
+
+
 body h3:hover{
     cursor: pointer;
 }
 
 
+
+
 #preloader{
     background: white url('fa87774590186b287a5338d7c87afc0c.gif') no-repeat center center;
-    background-size: 15%;
+    background-size: 10%;
     height: 100vh;
     width: 100%;
     position: fixed;
     z-index: 1000;
 }
 
+
+
+
 h2{
     font-size: 50px;
 }
 
-.navbar a{
-    color: white;
-}
+
+
 
 .navbar ul{
     display: flex;
@@ -47,10 +54,14 @@ h2{
 }
 
 
+
+
 .navbar ul li{
     padding: 5px 5px;
     margin: 0px 15px
 }
+
+
 
 
 .navigation-bar{
@@ -63,9 +74,13 @@ h2{
 }
 
 
+
+
 .navigation-bar li:hover{
     cursor: pointer;
 }
+
+
 
 
 .name{
@@ -83,6 +98,8 @@ h2{
 }
 
 
+
+
 .intro{
     padding: 0px 100px;
     font-size: 25px;
@@ -91,9 +108,14 @@ h2{
 }
 
 
+
+
 .intro .intro-text{
     font-size: 40px;
 }
+
+
+
 
 #go-up{
     top: 90%;
@@ -101,59 +123,83 @@ h2{
     z-index: 500;
     position: fixed;
 }
+
+
+
+
 #go-up:hover{
     cursor: pointer;
 }
+
+
+
 
 #go-up .go-up-wrapper{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(177, 67, 67);
+    background-color: #323232;
     height: 40px;
     width: 40px;
     border-radius: 50%;
 }
 
-/*animation properties*/
-#home a:hover{
-    /*border: 3px red solid;
-    border-radius: 4px;*/
-    color: red;
-    font-weight: bold;
+
+
+
+.navbar ul li span{
+    color: white;
+    transition: color 0.2s ease-in-out;
 }
 
 
 
-#about a:hover{
+
+#home:hover{
     color: red;
-    font-weight: bold;
 }
 
 
 
-#services a:hover{
+
+#about:hover{
     color: red;
-    font-weight: bold;
+    
 }
 
 
 
-#contact a:hover{
+
+#services:hover{
     color: red;
-    font-weight: bold;
+    
 }
 
 
 
-#feedback a:hover{
+
+#contact:hover{
     color: red;
-    font-weight: bold;
+    
 }
+
+
+
+
+#project:hover{
+    color: red;
+    
+}
+
+
+
 
 .job{
     font-size: 20px;
 }
+
+
+
 
 .info{
     display: flex;
@@ -348,11 +394,12 @@ h2{
 
 
 .service1, .service2, .service3{
-    height: 25rem;
-    width: 25rem;
+    height: 27.5rem;
+    width: 27.5rem;
     background-color: #323232;
     border-radius: 15px;
     margin: 10px;
+    transition: background-color 0.4s ease-in-out;
 }
 
 
@@ -400,21 +447,21 @@ h2{
 
 .service1:hover{
     background: #ab2020;
-    transition: background-color 0.3s ease-in-out;
+    
 }
 
 
 
 .service2:hover{
     background: #ab2020;
-    transition: background-color 0.3s ease-in-out;
+    
 }
 
 
 
 .service3:hover{
     background: #ab2020;
-    transition: background-color 0.3s ease-in-out;
+    
 }
 
 
@@ -426,32 +473,6 @@ h2{
 
 
 
-/*aniamtion forms*/
-@keyframes appearAnimation {
-    from {
-      opacity: 0;
-      background-color: blue;
-    }
-    to {
-      opacity: 1;
-      background-color: #ab2020;
-    }
-  }
-
-
-
-
-  /* Keyframes for fading animation */
-@keyframes fadeAnimation {
-    from {
-      opacity: 1;
-      background-color: #ab2020;
-    }
-    to {
-      opacity: 0;
-      background-color: blue;
-    }
-  }
 
 
   .project{
@@ -468,11 +489,15 @@ h2{
     justify-content: space-evenly;
   }
 
+  .project-wrapper2{
+    display: flex;
+    justify-content: space-evenly;
+  }
 
 
   .project1,.project2,.project3{
-    height: 25rem;
-    width: 25rem;
+    height: 27.5rem;
+    width: 27.5rem;
     background-color: #323232;
     border-radius: 15px;
     margin: 10px;
@@ -480,24 +505,24 @@ h2{
 
 
   .project1-head a img{
-    height: 25rem;
-    width: 25rem;
+    height: 27.5rem;
+    width: 27.5rem;
     border-radius: 15px;
   }
 
 
 
   .project2-head a img{
-    height: 25rem;
-    width: 25rem;
+    height: 27.5rem;
+    width: 27.5rem;
     border-radius: 15px;
   }
 
 
 
   .project3-head a img{
-    height: 25rem;
-    width: 25rem;
+    height: 27.5rem;
+    width: 27.5rem;
     border-radius: 15px;
   }
 
@@ -514,31 +539,18 @@ h2{
     height: 3rem;
     width: 8rem;
     color: white;
-    background: #121010;
+    background-color: #121010;
     border: #ab2020 2px solid;
     border-radius: 5px;
     font-weight: 600;
     font-size: 13px;
+    transition: background-color 0.3s ease-in-out;
   }
 
 
 
 .seemorebtn .btn:hover{
-    background: #121010;
-    animation: highlightbtn forwards 0.2s;
-}
-
-
-
-@keyframes highlightbtn {
-    from{
-        color: white;
-        background: #121010;
-    }
-    to{
-        color: white;
-        background: #ab2020;
-    }
+    background-color: #ab2020;
 }
 
 
@@ -594,15 +606,25 @@ textarea{
     height: 3rem;
     width: 10rem;
     color: white;
-    background: #ab2020;
+    background-color: #ab2020;
     border: #ab2020 2px solid;
     border-radius: 5px;
     font-weight: 600;
     font-size: 13px;
+    transition: border 0.3s ease-in-out,background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 
-
+.download .btn:hover{
+    height: 3rem;
+    width: 10rem;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 13px;
+    background-color: #121010;
+    border: #ab2020 2px solid;
+    color: #ab2020;
+}
 
 
 a{
@@ -613,47 +635,47 @@ a{
 
 
 .socialmedia{
+    width: 150px;
     display: flex;
     height: 50px;
+    justify-content: space-evenly;
 }
 
 
 
 
 .socialmedia .facebook,.instagram,.linkedin,.github{
-    margin-right: 7px;
-    height: 30px;
-    width: 30px;
-}
-
-
-
-
-.facebook,.instagram,.linkedin,.github{
+    height: 25px;
+    width: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 
 
 .socialmedia .facebook img:hover{
-    animation: enlarge 0.3s forwards;
+    height: 30px;
+    width: 30px;
     cursor: pointer;
+    transition: height 0.3s ease-in-out, width 0.3s ease-in-out;
 }
 
 
 
 
 .socialmedia .instagram img:hover{
-    animation: enlarge 0.3s forwards;
+    height: 30px;
+    width: 30px;
     cursor: pointer;
 }
 
 
 
 .socialmedia .linkedin img:hover{
-    animation: enlarge 0.3s forwards;
+    height: 30px;
+    width: 30px;
     cursor: pointer;
 }
 
@@ -661,37 +683,10 @@ a{
 
 
 .socialmedia .github img:hover{
-    animation: enlarge 0.3s forwards;
+    height: 30px;
+    width: 30px;
     cursor: pointer;
 }
-
-
-
-
-@keyframes enlarge {
-    from{
-        height: 25px;
-        width: 25px;
-    }
-    to{
-        height: 30px;
-        width: 30px;
-    }
-}
-
-
-
-.download .btn:hover{
-    height: 3rem;
-    width: 10rem;
-    
-    border-radius: 5px;
-    font-weight: 600;
-    font-size: 13px;
-    animation: transitionbackground 0.3s forwards;
-    
-}
-
 
 
 .submitformbtn{
@@ -709,42 +704,18 @@ a{
     border-radius: 5px;
     font-weight: 600;
     font-size: 13px;
+    transition: background-color 0.3s ease-in-out;
   }
 
 
 
 .submitformbtn .btn:hover{
-    background: #121010;
-    animation: highlightbtn forwards 0.2s;
+    background: #ab2020;
 }
 
-
-
-@keyframes transitionbackground {
-    0%{
-        
-        background: #ab2020;
-        border: #ab2020 2px solid;
-    }
-    100%{
-        background: blue;
-        border: blue 2px solid;
-    }
+.toggle{
+    display:none;
 }
-
-@keyframes transitioncolor {
-    0%{
-        color: white;
-    }
-    100%{
-        color: #ab2020;
-    }
-}
-
-
-    .toggle{
-        display:none;
-    }
 
 
 
@@ -794,12 +765,29 @@ a{
         box-sizing: border-box;
     }
     
+.contact .contact-wrapper .contact-header ul li{
+    min-width:22px;
+}
 
     /* Default styles for all devices */
 
 /* Media query for devices with a maximum width of 600 pixels */
 @media screen and (max-width: 600px) {
     /* Styles for devices with a maximum width of 600 pixels */
+    #preloader{
+        background: white url('fa87774590186b287a5338d7c87afc0c.gif') no-repeat center center;
+        background-size: 15%;
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        z-index: 1000;
+    }
+    #go-up{
+        top: 90%;
+        left:90%;
+        z-index: 500;
+        position: fixed;
+    }
     .name{
         font-size: 30px;
         margin-left: 50px;
@@ -817,6 +805,9 @@ a{
     }
 
     .project-wrapper{
+        flex-wrap: wrap;
+    }
+    .project-wrapper2{
         flex-wrap: wrap;
     }
     .profile-pic{
@@ -919,38 +910,6 @@ a{
         font-weight: 600;
         font-size: 13px;
     }
-    .download .btn{
-        height: 2.5rem;
-        width: 8rem;
-        color: white;
-        background: #ab2020;
-        border: #ab2020 2px solid;
-        border-radius: 5px;
-        font-weight: 600;
-        font-size: 13px;
-    }
-    
-    .download .btn:hover{
-        height: 2.5rem;
-        width: 8rem;
-        
-        border-radius: 5px;
-        font-weight: 600;
-        font-size: 13px;
-        animation: transitionbackground 0.3s forwards;
-        
-    }
-    
-    @keyframes transitionbackground {
-        0%{
-            background: #ab2020;
-            border: #ab2020 2px solid;
-        }
-        100%{
-            background: blue;
-            border: blue 2px solid;
-        }
-    }
 
     .service1, .service2, .service3{
         height: 22rem;
@@ -982,11 +941,29 @@ a{
     .services p{
         font-size: 15px;
     }
-    
+    .contact-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
   /* Media query for devices with a minimum width of 601 pixels and a maximum width of 900 pixels */
   @media screen and (min-width: 601px) and (max-width: 900px) {
     /* Styles for devices with a width between 601 and 900 pixels */
+    #preloader{
+        background: white url('fa87774590186b287a5338d7c87afc0c.gif') no-repeat center center;
+        background-size: 10%;
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        z-index: 1000;
+    }
+    #go-up{
+        top: 90%;
+        left: 90%;
+        z-index: 500;
+        position: fixed;
+    }
     .name{
         font-size: 30px;
         margin-left: 50px;
@@ -1007,7 +984,9 @@ a{
     .project-wrapper{
         flex-wrap: wrap;
     }
-
+    .project-wrapper2{
+        flex-wrap: wrap;
+    }
     .profile-pic{
         display: none;
     }
@@ -1075,8 +1054,8 @@ a{
         text-align: center;
     }
     .service1, .service2, .service3{
-        height: 22rem;
-        width: 22rem;
+        height: 22.5rem;
+        width: 22.5rem;
         background-color: #323232;
         border-radius: 15px;
         margin: 10px;
@@ -1094,8 +1073,8 @@ a{
         width: 50px;
     }
     .project1,.project2,.project3{
-        height: 22rem;
-        width: 22rem;
+        height: 22.5rem;
+        width: 22.5rem;
         background-color: #323232;
         border-radius: 15px;
         margin: 10px;
@@ -1125,7 +1104,9 @@ a{
     .project-wrapper{
         flex-wrap: wrap;
     }
-
+    .project-wrapper2{
+        flex-wrap: wrap;
+    }
     .info{
         font-size: 20px;
     }
