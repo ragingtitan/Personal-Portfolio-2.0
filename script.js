@@ -105,9 +105,11 @@ seemore.addEventListener('click',()=>{
     if(seemore.textContent=='See less')
     {
         seemore.textContent='See more';
+        projectgo.scrollIntoView({ behavior: 'smooth' });
     }
     else{
         seemore.textContent='See less';
+        
     }
 });
 
