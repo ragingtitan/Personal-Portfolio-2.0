@@ -276,8 +276,8 @@ h2{
 
 .project1 .project1-head a img{
     width: 100%;
-      height: auto;
-      display: block;
+    height: auto;
+    display: block;
 }
 
 
@@ -1014,7 +1014,6 @@ a{
         text-align: center;
         font-size: 30px;
     }
-
     .service1-header,.service2-header,.service3-header{
         display: flex;
         justify-content: center;
@@ -1033,7 +1032,6 @@ a{
         height: 25px;
         width: 3px;
     }
-    
     .animation{
         height: 25px;
     }
@@ -1049,7 +1047,6 @@ a{
         display: flex;
         justify-content: left;
     }
-
     .contact-header h2{
         text-align: center;
     }
@@ -1099,8 +1096,6 @@ a{
     .services-wrapper{
         flex-wrap: wrap;
     }
-    
-
     .project-wrapper{
         flex-wrap: wrap;
     }
@@ -1110,11 +1105,7 @@ a{
     .info{
         font-size: 20px;
     }
-
   }
-  
-
-
   @media screen and (min-width: 100px) and (max-width: 900px) {
     /* Styles for devices with a width between 100 and 900 pixels */
 
