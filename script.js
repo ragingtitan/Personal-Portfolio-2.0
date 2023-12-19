@@ -20,9 +20,9 @@ document.addEventListener('DOMContentLoaded',()=>{
 
     education.addEventListener('click',()=>{
         text.classList.toggle('toggle');
-        text.innerHTML='<p>Completed 10th and 12th and currently doing BTECH in ECE.</p>';
+        text.innerHTML='<p>Currently doing BTech from Heritage Institute of Technology, Kolkata.</p>';
     });
-
+//Tying words
 const words = ["Hey, there!","Welcome!","I am Anish Das.","Follow me on","Facebook","Instagram","LinkedIn","and Github.","Contact me below.", "Thank you.","Have a nice day!"];
 let index = 0;
 let wordIndex = 0;
@@ -109,6 +109,7 @@ seemore.addEventListener('click',()=>{
     }
     else{
         seemore.textContent='See less';
+        target.scrollIntoView({ behavior: 'smooth' });
         
     }
 });
