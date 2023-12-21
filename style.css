@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Netflix Font', sans-serif;
     
 }
 
@@ -17,7 +17,9 @@ body{
     color: white;
 }
 
-
+.body{
+    background-color: #121010;
+}
 
 
 body h3:hover{
@@ -40,10 +42,17 @@ body h3:hover{
 
 
 h2{
-    font-size: 50px;
+    font-size: 60px;
+    font-weight: 800;
 }
 
 
+
+
+
+h4{
+    font-size: 19px ;
+}
 
 
 .navbar ul{
@@ -111,7 +120,7 @@ h2{
 
 
 .intro .intro-text{
-    font-size: 40px;
+    font-size: 50px;
 }
 
 
@@ -195,7 +204,7 @@ h2{
 
 
 .job{
-    font-size: 20px;
+    font-size: 25px;
 }
 
 
@@ -566,16 +575,22 @@ h2{
 .contact-wrapper{
     display: flex;
     justify-content: space-between;
-    margin-right: 100px;
+
 }
 
 
 
 
 
+.contact-form{
+    margin-right: 100px;
+}
+
+
+
 .form{
-    height: 50px;
-    width: 30rem;
+    height: 55px;
+    width: 29rem;
     border: none;
     color-scheme: dark;
     border-bottom: white;
@@ -589,10 +604,9 @@ h2{
 
 textarea{
     height: 200px;
-    width: 30rem;
+    width: 29rem;
     border: white;
     color-scheme: dark;
-    margin-top: 20px;
     padding:0px 8px;
     font-weight: bold;
     border-radius: 5px;
@@ -768,6 +782,11 @@ a{
 .contact .contact-wrapper .contact-header ul li{
     min-width:22px;
 }
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
     /* Default styles for all devices */
 
@@ -828,7 +847,7 @@ a{
 
     h2{
         text-align: center;
-        font-size: 30px;
+        font-size: 35px;
     }
     .skillset{
         display: flex;
@@ -842,7 +861,7 @@ a{
         display: block;
     }
     .intro .intro-text{
-        font-size: 20px;
+        font-size: 25px;
     }
     .service1-header,.service2-header,.service3-header{
         display: flex;
@@ -871,6 +890,10 @@ a{
     }
     .contact-form{
         padding: 0px 25px;
+        
+    }
+    .contact-form{
+        margin-right: 0px;
     }
     .submitformbtn{
         display: flex;
@@ -946,6 +969,19 @@ a{
         flex-direction: column;
         justify-content: center;
     }
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-header ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .job{
+        font-size: 17px;
+    }
 }
   /* Media query for devices with a minimum width of 601 pixels and a maximum width of 900 pixels */
   @media screen and (min-width: 601px) and (max-width: 900px) {
@@ -1012,7 +1048,7 @@ a{
 
     h2{
         text-align: center;
-        font-size: 30px;
+        font-size: 40px;
     }
     .service1-header,.service2-header,.service3-header{
         display: flex;
@@ -1025,7 +1061,7 @@ a{
         display: block;
     }
     .intro .intro-text{
-        font-size: 20px;
+        font-size: 25px;
         
     }
     .cursor{
@@ -1051,8 +1087,8 @@ a{
         text-align: center;
     }
     .service1, .service2, .service3{
-        height: 22.5rem;
-        width: 22.5rem;
+        height: 24rem;
+        width: 24rem;
         background-color: #323232;
         border-radius: 15px;
         margin: 10px;
@@ -1070,8 +1106,8 @@ a{
         width: 50px;
     }
     .project1,.project2,.project3{
-        height: 22.5rem;
-        width: 22.5rem;
+        height: 24rem;
+        width: 24rem;
         background-color: #323232;
         border-radius: 15px;
         margin: 10px;
@@ -1082,6 +1118,22 @@ a{
     }
     .services p{
         font-size: 15px;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-header ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-form{
+        margin-right: 0px;
+    }
+    .job{
+        font-size: 17px;
     }
 }
   
@@ -1106,6 +1158,7 @@ a{
         font-size: 20px;
     }
   }
+  
   @media screen and (min-width: 100px) and (max-width: 900px) {
     /* Styles for devices with a width between 100 and 900 pixels */
 
@@ -1130,4 +1183,30 @@ a{
         
     }
     
+  }
+  @media screen and (min-width: 900px) and (max-width: 1100px) {
+    /* Styles for devices with a width between 900 and 1000 pixels */
+    .form{
+        height: 55px;
+        width: 25rem;
+        border: none;
+        color-scheme: dark;
+        border-bottom: white;
+        padding:0px 10px;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+    textarea{
+        height: 200px;
+        width: 25rem;
+        border: white;
+        color-scheme: dark;
+        padding:0px 8px;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+    h2{
+        text-align: center;
+        font-size: 40px;
+    }
   }
