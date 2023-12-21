@@ -10,10 +10,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Slab&family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/netflix-font" rel="stylesheet">
 </head>
 <body>
   <div id="preloader"></div>
-  
   <header>
     <div class="navigation-bar">
       <div class="name"><a href="https://portfolioanishdas.netlify.app/"><span class="letter-a red">A</span>nish.</a></div>
@@ -32,21 +32,21 @@
         </ul>
       </nav>
     </div>
+    <div class="intro">
+      <ul>
+        <li class="job mstop msbot">Web Developer</li>
+        <li class="intro-text b">
+          <div class="animation">
+            <div id="type"></div>
+            <span class="cursor"></span>
+          </div>
+        </li>
+        <li class="intro-text mstop msbot b">Love from India<span class="heart">❤️</span></li>
+      </ul>
+    </div>
   </header>
   <div class="body">
     <div class="body-wrapper">
-      <div class="intro">
-        <ul>
-          <li class="job mstop msbot">Web Developer</li>
-          <li class="intro-text b">
-            <div class="animation">
-              <div id="type"></div>
-              <span class="cursor"></span>
-            </div>
-          </li>
-          <li class="intro-text mstop msbot b">Love from India<span class="heart">❤️</span></li>
-        </ul>
-      </div>
       <div class="info mxltop mxlbot">
         <div class="info-wrapper">
           <div class="profile-pic">
@@ -69,7 +69,6 @@
           </div>
           <div id="text" class="toggle"><p>HTML, CSS, JavaScript,   Responsive Design, node.js, UI/UX Principles and figma</p></div>
         </div>
-      </div>
       </div>
     </div>
     <div class="services">
@@ -146,7 +145,7 @@
       </div>
     </div>
     <div class="project mxltop">
-      <h2 class=" pl b mstop msbot">My Projects</h2>
+      <h2 class="pl mstop msbot">My Projects</h2>
       <div class="project-wrapper mtop mbot">
         <div class="project1">
           <div class="project1-head">
@@ -212,7 +211,7 @@
           </div>
         </div>
       </div>
-      <div class="seemorebtn msbot mtop">
+      <div class="seemorebtn msbot mstop">
         <button id="seemore-btn" class="btn">See more</button>
       </div>
     </div>
@@ -256,11 +255,11 @@
         </div>
         <div class="contact-form">
           <form name="submit-to-google-sheet">
-            <input name="Name" class="form mstop msbot" type="name" placeholder="Your Name" required>
+            <input name="Name" class="form mstop" type="name" placeholder="Your Name" required>
             <br>
             <input name="Email" class="form" type="email" placeholder="Your Email" required>
             <br>
-            <textarea class="mstop msbot" name="Feedback" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <textarea name="Feedback" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
             <br>
             <div class="submitformbtn msbot">
               <button class="btn">Submit</button>
@@ -309,5 +308,13 @@
       },2000)
     })
   </script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <!--<script>
+    ScrollReveal().reveal('.info-wrapper', { duration: 4000, reset: true });
+    ScrollReveal().reveal('.services', { duration: 3000, reset: true });
+    ScrollReveal().reveal('.project', { duration: 3000, reset: true });
+    ScrollReveal().reveal('.contact', { duration: 3000, reset: true });
+  </script>
+-->
 </body>
 </html>
