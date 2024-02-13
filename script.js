@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     /*Populating skillset section*/ 
     skill.addEventListener('click',()=>{
         text.classList.toggle('toggle');
-        text.innerHTML='<p>HTML, CSS, JavaScript, Responsive Design, node.js, React.js, Python UI/UX Principles and figma.</p>';
+        text.innerHTML='<p>HTML, CSS, JavaScript, Responsive Design, node.js, Express.js, React.js, Python, JAVA and MySQL.</p>';
     });
     experience.addEventListener('click',()=>{
         text.classList.toggle('toggle');
